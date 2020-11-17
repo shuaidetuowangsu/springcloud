@@ -30,3 +30,4 @@ java企业级开发一般使用springboot框架来进行应用功能的开发，
 4. 功能模块Service之间引用时，建议不要渗透到DAO层（或者mapper层），基于Service层进行调用和复用比较合理
 
 5. 业务逻辑层Service和数据库DAO层的操作对象不要混用。Controller层的数据对象不要直接渗透到DAO层（或者mapper层）；同理数据表实体对象Entity也不要直接传到Controller层进行输出或展示
+获取年月日,YYYYMMDD:LocalDate.now().format(DateTimeFormatter.BASIC_ISO_DATE);
