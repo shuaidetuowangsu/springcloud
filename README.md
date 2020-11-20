@@ -14,7 +14,7 @@ java企业级开发一般使用springboot框架来进行应用功能的开发，
 12. bo(业务对象)
 13. vo(传输层包)
 - 上述也可根据包名换成model进行分模块开发
-<img src="http://p0.so.qhimgs1.com/bdr/300_115_/t024dc880eb4dbe5e74.jpg" width="300" height="200 ">
+- ![Project Layer](https://shitu-query-gz.gz.bcebos.com/2020-11-20/09/6e459d93fd6ee9f2?authorization=bce-auth-v1%2F7e22d8caf5af46cc9310f1e3021709f3%2F2020-11-20T01%3A12%3A54Z%2F300%2Fhost%2Fed0935c14bf188c092e015a24ed85b93cf620546a132ae50d629566197654854 "App Layer")
 #### 多表查询返回对象处理
 * 新建数据传输类（DTO）,例如MemberDTO包含很多DO对应的信息
 * 写一个方法把DO转化成DTO,一个DTO包含的数据可能来自好几个DO,就像你现在需要传输Member的数据，如果需要其他表的一些属性怎么办。
