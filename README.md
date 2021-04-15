@@ -32,6 +32,7 @@ java企业级开发一般使用springboot框架来进行应用功能的开发，
 5. 业务逻辑层Service和数据库DAO层的操作对象不要混用。Controller层的数据对象不要直接渗透到DAO层（或者mapper层）；同理数据表实体对象Entity也不要直接传到Controller层进行输出或展示
 
 6. 获取年月日YYYYMMDD:LocalDate.now().format(DateTimeFormatter.BASIC_ISO_DATE);
+7.注意点: 如果抛出的自定义异常/异常信息,被catch代码块所捕获,如果catch代码块没有抛出异常,就被吞掉,不会被全局异常所捕获。
 ### 交互的分层时序结构图
 - ![Project Layer](https://shitu-query-gz.gz.bcebos.com/2020-11-20/09/6e459d93fd6ee9f2?authorization=bce-auth-v1%2F7e22d8caf5af46cc9310f1e3021709f3%2F2020-11-20T01%3A12%3A54Z%2F300%2Fhost%2Fed0935c14bf188c092e015a24ed85b93cf620546a132ae50d629566197654854 "App Layer")
 - ![Project Layer](https://shitu-query-gz.gz.bcebos.com/2020-11-20/09/99765d21c5c533f8?authorization=bce-auth-v1%2F7e22d8caf5af46cc9310f1e3021709f3%2F2020-11-20T01%3A18%3A33Z%2F300%2Fhost%2Fc47a9ce08fabc84562bf301c8d17cef17b4c63df30d95122077aec8a7fc873e3 "RPC Layer")
